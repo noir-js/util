@@ -313,6 +313,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@noir/_template@workspace:."
   dependencies:
+    "@polkadot/util": ^12.2.1
     "@typescript-eslint/eslint-plugin": ^5.49.0
     "@typescript-eslint/parser": ^5.49.0
     eslint: ^8.33.0
@@ -343,10 +344,73 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@polkadot/util@npm:^12.2.1":
+  version: 12.2.1
+  resolution: "@polkadot/util@npm:12.2.1"
+  dependencies:
+    "@polkadot/x-bigint": 12.2.1
+    "@polkadot/x-global": 12.2.1
+    "@polkadot/x-textdecoder": 12.2.1
+    "@polkadot/x-textencoder": 12.2.1
+    "@types/bn.js": ^5.1.1
+    bn.js: ^5.2.1
+    tslib: ^2.5.0
+  checksum: 850f0c82ee9a76f2b3da78cd5d37568a045ee0b5da25f491f275290843b460eb383dc3c9058918522bf09f0c0e1acca67445ee49615c557e94f14c392048be40
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-bigint@npm:12.2.1":
+  version: 12.2.1
+  resolution: "@polkadot/x-bigint@npm:12.2.1"
+  dependencies:
+    "@polkadot/x-global": 12.2.1
+    tslib: ^2.5.0
+  checksum: 2e1603f576654876e38e84bbea16d6206cfad58b58de0ab70bd9a5e86a20e903cae3e271f4b247f3d9fbecbe8475f40866c0bbacb7700c01be732f9b85ec6d81
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-global@npm:12.2.1":
+  version: 12.2.1
+  resolution: "@polkadot/x-global@npm:12.2.1"
+  dependencies:
+    tslib: ^2.5.0
+  checksum: 49b784d20014b86616ff6ad02bd8680b685d1a004ad91476cc4c3cd08ecdc4d50d98bc141a6dfc80411301147aac68a36a09ae338002772afa3a6a8fdcb8e672
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-textdecoder@npm:12.2.1":
+  version: 12.2.1
+  resolution: "@polkadot/x-textdecoder@npm:12.2.1"
+  dependencies:
+    "@polkadot/x-global": 12.2.1
+    tslib: ^2.5.0
+  checksum: 0e20a59e9bc7738c7ad8f5be082bd1e26269e9f5128868df86f13e7eee93e488eff642868009501b242fceed397ad577e42e6ab07caef3c813f930a60ad422a2
+  languageName: node
+  linkType: hard
+
+"@polkadot/x-textencoder@npm:12.2.1":
+  version: 12.2.1
+  resolution: "@polkadot/x-textencoder@npm:12.2.1"
+  dependencies:
+    "@polkadot/x-global": 12.2.1
+    tslib: ^2.5.0
+  checksum: 61d14f5c998baf2e896487a89b0eb4dd884bc88a05aa7a716cfd872029883c26cd3b790c920061d7b190e9a13a2a4b2a9c5b19de516ef4d0c369e119f9da445d
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:2":
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@types/bn.js@npm:^5.1.1":
+  version: 5.1.1
+  resolution: "@types/bn.js@npm:5.1.1"
+  dependencies:
+    "@types/node": "*"
+  checksum: e50ed2dd3abe997e047caf90e0352c71e54fc388679735217978b4ceb7e336e51477791b715f49fd77195ac26dd296c7bad08a3be9750e235f9b2e1edb1b51c2
   languageName: node
   linkType: hard
 
@@ -732,6 +796,13 @@ __metadata:
   version: 2.19.0
   resolution: "blueimp-md5@npm:2.19.0"
   checksum: 28095dcbd2c67152a2938006e8d7c74c3406ba6556071298f872505432feb2c13241b0476644160ee0a5220383ba94cb8ccdac0053b51f68d168728f9c382530
+  languageName: node
+  linkType: hard
+
+"bn.js@npm:^5.2.1":
+  version: 5.2.1
+  resolution: "bn.js@npm:5.2.1"
+  checksum: 3dd8c8d38055fedfa95c1d5fc3c99f8dd547b36287b37768db0abab3c239711f88ff58d18d155dd8ad902b0b0cee973747b7ae20ea12a09473272b0201c9edd3
   languageName: node
   linkType: hard
 
@@ -2836,6 +2907,13 @@ __metadata:
   version: 1.14.1
   resolution: "tslib@npm:1.14.1"
   checksum: dbe628ef87f66691d5d2959b3e41b9ca0045c3ee3c7c7b906cc1e328b39f199bb1ad9e671c39025bd56122ac57dfbf7385a94843b1cc07c60a4db74795829acd
+  languageName: node
+  linkType: hard
+
+"tslib@npm:^2.5.0":
+  version: 2.5.0
+  resolution: "tslib@npm:2.5.0"
+  checksum: ae3ed5f9ce29932d049908ebfdf21b3a003a85653a9a140d614da6b767a93ef94f460e52c3d787f0e4f383546981713f165037dc2274df212ea9f8a4541004e1
   languageName: node
   linkType: hard
 
