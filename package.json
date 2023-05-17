@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "license": "Apache-2.0",
   "type": "module",
-  "packageManager": "yarn@3.5.0",
   "exports": {
     ".": "./src/index.ts",
     "./package.json": "./package.json"
@@ -28,9 +27,8 @@
   },
   "scripts": {
     "build": "rm -rf dist && tsup ./src/index.ts ./src/types.ts --format cjs,esm --dts",
-    "dev": "yarn run build --watch",
     "lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\" --quiet",
-    "prepack": "yarn build",
+    "prepack": "npm run build",
     "typecheck": "tsc --noEmit",
     "test": "vitest run"
   },
