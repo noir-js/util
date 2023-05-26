@@ -28,7 +28,7 @@
       },
       "./types": {
         "types": "./dist/types.d.ts",
-        "require": "./cjs/types.cjs",
+        "require": "./cjs/types.js",
         "import": "./dist/types.js"
       },
       "./package.json": "./package.json"
