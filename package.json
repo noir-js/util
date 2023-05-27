@@ -14,28 +14,19 @@
     "dist"
   ],
   "exports": {
-    ".": "./src/index.ts",
-    "./types": "./src/types.ts",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./cjs/index.js",
+      "import": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types.d.ts",
+      "require": "./cjs/types.js",
+      "import": "./dist/types.js"
+    },
     "./package.json": "./package.json"
   },
-  "main": "./src/index.ts",
-  "publishConfig": {
-    "access": "public",
-    "exports": {
-      ".": {
-        "types": "./dist/index.d.ts",
-        "require": "./cjs/index.js",
-        "import": "./dist/index.js"
-      },
-      "./types": {
-        "types": "./dist/types.d.ts",
-        "require": "./cjs/types.js",
-        "import": "./dist/types.js"
-      },
-      "./package.json": "./package.json"
-    },
-    "main": "./dist/index.js"
-  },
+  "main": "./dist/index.js",
   "scripts": {
     "build": "npm run build:cjs && npm run build:esm",
     "build:cjs": "rm -rf cjs && tsc -p tsconfig.cjs.json && echo '{\"type\": \"commonjs\"}' > cjs/package.json",
