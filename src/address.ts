@@ -13,7 +13,7 @@ export function encodeAddress (key: HexString | Uint8Array | string, _ss58Format
   return 'u' + u8aToBase64url(u8a);
 }
 
-export function decodeAddress (encoded?: HexString | string | Uint8Array | null, _ignoreChecksum?: boolean, _ss58Format = 1): Uint8Array {
+export function decodeAddress (encoded?: HexString | string | Uint8Array | null, _ignoreChecksum?: boolean, _ss58Format = -1): Uint8Array {
   if (!encoded) {
     throw new Error('Invalid empty address passed');
   }
