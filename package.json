@@ -47,6 +47,7 @@
     "vitest": "^0.31.0"
   },
   "dependencies": {
-    "@polkadot/util": "^12.2.1"
+    "@polkadot/util": "^12.2.1",
+    "@scure/base": "^1.1.5"
   }
 }

@@ -1,7 +1,7 @@
 // Copyright (C) 2023 Haderech Pte. Ltd.
 // SPDX-License-Identifier: Apache-2.0
 
-import { base64urlnopad } from './scure-base.js';
+import { base64urlnopad } from '@scure/base';
 
 /**
  * @name u8aToBase64url
